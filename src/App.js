@@ -1,21 +1,26 @@
+import React, { useEffect, useState } from 'react';
+import EmployeeTable from './components/employeeTable.js';
+import FilterEmployees from './components/filterEmployees.js';
+import Footer from './components/footer.js';
+import Header from './components/header.js';
+import { getEmployees } from './utils/api';
 import './App.css';
 
 function App() {
+  function App() {
+    const [initialEmployees, updateAvailableEmployees] = useState([]);
+    const [employeesToRender, updateEmployeesToRender] = useState([]);
+  
+    useEffect(() => {
+      getEmployees().then(({ data: { results } }) => updateAvailableEmployees(results));
+    }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <FilterEmployees employees = { initialEmployees } updateEmployees = { updateEmployeesToRender } />
+      <EmployeeTable employees = { employeesToRender} />
+      <Footer />
     </div>
   );
 }

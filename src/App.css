@@ -8,6 +8,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+
 /* Employee FILTER */
 .filter-data {
     text-align: center;
@@ -22,9 +23,19 @@
     margin-bottom: 40px;
 }
 
-/* FOOTER */
-
-
-
 
 /* Employee TABLE */
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: #ddadff;
+    color: whitesmoke;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Table from 'react-bootstrap/Table'; 
+import Table from 'react-bootstrap/Table';
+import '../App.css';
+
 
 const EmployeeTable = ({ employees }) => {
     const [sortedEmployees, updateSortedEmployees] = useState([]);

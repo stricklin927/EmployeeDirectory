@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import '../App.css';
+
 
 const FilterEmployees = ({ employees, updateEmployees }) => {
     const [inputValue, updateInput] = useState("");

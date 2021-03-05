@@ -9,8 +9,8 @@ const EmployeeTable = ({ employees }) => {
     
     return (
         <Table striped bordered hover responsive="xl">
-            <thead >
-                <tr className="bg-secondary text-white text-center">
+            <thead>
+                <tr className="tableHeader">
                     <th scope="col">Picture</th>
                     <th scope="col"> Title </th>
                     <th scope="col" 

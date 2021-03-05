@@ -1,1 +1,30 @@
- 
+/* HEADER */
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #ddadff;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Employee FILTER */
+.filter-data {
+    text-align: center;
+    background-color: #ddadff;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.input-box {
+    margin-bottom: 40px;
+}
+
+/* FOOTER */
+
+
+
+
+/* Employee TABLE */

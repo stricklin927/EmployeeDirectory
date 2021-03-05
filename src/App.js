@@ -7,13 +7,12 @@ import { getEmployees } from './utils/api';
 import './App.css';
 
 function App() {
-  function App() {
-    const [initialEmployees, updateAvailableEmployees] = useState([]);
-    const [employeesToRender, updateEmployeesToRender] = useState([]);
-  
-    useEffect(() => {
-      getEmployees().then(({ data: { results } }) => updateAvailableEmployees(results));
-    }, []);
+  const [initialEmployees, updateAvailableEmployees] = useState([]);
+  const [employeesToRender, updateEmployeesToRender] = useState([]);
+
+  useEffect(() => {
+    getEmployees().then(({ data: { results } }) => updateAvailableEmployees(results));
+  }, []);
 
   return (
     <div className="App">
